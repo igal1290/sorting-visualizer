@@ -1,1 +1,2 @@
-# SortingVisualizer
+# Sorting Visualizer
+View Project: 
