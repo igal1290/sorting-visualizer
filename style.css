@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(90deg, #141e30, #243b55);
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading {
+  color: #f0f0f0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.array-btn {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 2.48rem;
+  left: 4rem;
+  width: 8%;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  color: #f0f0f0;
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-left: 1.6rem;
+  outline: none;
+  border-color: rgb(141, 232, 141);
+  transition: all 0.2s ease;
+}
+
+.array-btn:hover {
+  transform: translateY(-0.35rem);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.sort-btn {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  color: #f0f0f0;
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin: 2rem;
+  cursor: pointer;
+  outline: none;
+  border-color: #809bed;
+  transition: all 0.2s ease;
+}
+
+.sort-btn:hover {
+  transform: translateY(-0.35rem);
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  transition: 2s all;
+}
+
+.flex-bar {
+  background: linear-gradient(90deg, #56ab2f, #a8e063);
+  border: 1pt solid black;
+  width: 0.8rem;
+  transition: all 0.1s ease;
+}
+
+#barSize {
+  margin-right: 4rem;
+}
+
+#barSize p {
+  color: #f0f0f0;
+}
+
+#barSpeed p {
+  color: #f0f0f0;
+}
+
+.input-container {
+  display: flex;
+  position: absolute;
+  right: 7rem;
+}
