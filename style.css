@@ -94,3 +94,11 @@ body {
   position: absolute;
   right: 7rem;
 }
+
+#arraySize {
+  cursor: pointer;
+}
+
+#arraySpeed {
+  cursor: pointer;
+}
