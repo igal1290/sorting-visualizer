@@ -1,7 +1,7 @@
 // ---------------- Variables ----------------
 const newArray = document.querySelector('.array-btn');
-let arraySize = document.querySelector('#arraySize');
-let arraySpeed = document.querySelector('#arraySpeed');
+const arraySize = document.querySelector('#arraySize');
+const arraySpeed = document.querySelector('#arraySpeed');
 let numberOfBars = 100;
 let array = [];
 let time = 50; // 50ms
@@ -16,7 +16,7 @@ function swap(elem1, elem2) {
   elem2.style.height = temp;
 }
 
-function waitforme(time) {
+function waitTime(time) {
   // in milliseconds
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -27,22 +27,22 @@ function waitforme(time) {
 
 // Disable size input
 function disableSizeInput() {
-  document.querySelector('#arraySize').disabled = true;
+  arraySize.disabled = true;
 }
 
 // Enable size input
 function enableSizeInput() {
-  document.querySelector('#arraySize').disabled = false;
+  arraySize.disabled = false;
 }
 
 // Disable new array button
 function disableNewArrayButton() {
-  document.querySelector('.array-btn').disabled = true;
+  newArray.disabled = true;
 }
 
 // Enable new array button
 function enableNewArrayButton() {
-  document.querySelector('.array-btn').disabled = false;
+  newArray.disabled = false;
 }
 
 // Disable sort buttons during sorting
@@ -86,8 +86,7 @@ function removeBars() {
   bars.innerHTML = '';
 }
 
-// ---------------- Event Listeners ----------------
-
+// ---------------- Event Listeners ----------------]
 // New Array Button
 newArray.addEventListener('click', () => {
   enableSortButton();

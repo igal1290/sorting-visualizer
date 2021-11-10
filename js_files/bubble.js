@@ -1,5 +1,7 @@
+// ---------------- Variables ----------------
 const bubbleSortButton = document.querySelector('.bubbleSort');
 
+// ---------------- Functions ----------------
 async function bubbleSort() {
   const elem = document.querySelectorAll('.bar');
 
@@ -9,7 +11,7 @@ async function bubbleSort() {
       elem[j + 1].style.background = 'blue';
 
       if (parseInt(elem[j].style.height) > parseInt(elem[j + 1].style.height)) {
-        await waitforme(time);
+        await waitTime(time);
         swap(elem[j], elem[j + 1]);
       }
 
@@ -24,6 +26,7 @@ async function bubbleSort() {
   elem[0].style.background = 'linear-gradient(90deg, #7b4397, #dc2430)';
 }
 
+// ---------------- Event Listeners ----------------
 bubbleSortButton.addEventListener('click', async () => {
   disableSortButton();
   disableNewArrayButton();

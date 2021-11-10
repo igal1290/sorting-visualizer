@@ -11,14 +11,14 @@ async function insertionSort() {
 
     elem[i].style.background = 'blue';
 
-    await waitforme(time);
+    await waitTime(time);
 
     while (j >= 0 && parseInt(current) < parseInt(elem[j].style.height)) {
       elem[j].style.background = 'blue';
       elem[j + 1].style.height = elem[j].style.height;
       j--;
 
-      await waitforme(time);
+      await waitTime(time);
 
       for (let k = i; k >= 0; k--) {
         elem[k].style.background = 'linear-gradient(90deg, #7b4397, #dc2430)';

@@ -1,5 +1,7 @@
+// ---------------- Variables ----------------
 const selectionSortButton = document.querySelector('.selectionSort');
 
+// ---------------- Functions ----------------
 async function selectionSort() {
   const elem = document.querySelectorAll('.bar');
 
@@ -10,7 +12,7 @@ async function selectionSort() {
 
     for (let j = i + 1; j < elem.length; j++) {
       elem[j].style.background = 'blue';
-      await waitforme(time);
+      await waitTime(time);
 
       if (
         parseInt(elem[j].style.height) < parseInt(elem[minIndex].style.height)
@@ -26,7 +28,7 @@ async function selectionSort() {
       }
     }
 
-    await waitforme(time);
+    await waitTime(time);
     swap(elem[minIndex], elem[i]);
 
     elem[minIndex].style.background =
@@ -36,6 +38,7 @@ async function selectionSort() {
   }
 }
 
+// ---------------- Event Listeners ----------------
 selectionSortButton.addEventListener('click', async () => {
   disableSortButton();
   disableNewArrayButton();
