@@ -1,5 +1,5 @@
 # Sorting Visualizer
-View Project: https://igal1290.github.io/SortingVisualizer/
+View Project: https://igal1290.github.io/sorting-visualizer/
 </br>
 </br>
 This is a sorting visualizer with 3 basic sorting algorithms (Bubble Sort, Selection Sort and Insertion Sort). I've always wanted to visualize sorting algorithms in action with different sizes and speed.
